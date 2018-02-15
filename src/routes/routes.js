@@ -31,7 +31,7 @@ app.post('/movies',Logs,async function(req,res,next){
 })
 
 app.get('/movies/:name', async function (req, res, next) {
-    let moviename = req.params.name;
+    let moviename = req.params.name
     console.log(moviename);
     try {
         let movie = await getOnemovie.getMovie(moviename);
